@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>GIF BATTLE</title>
+		<link rel="stylesheet" href="gifBattleStyles.css">
+		<script>
+        	function changeHref(buttonId) {
+            	var link1 = document.getElementById('meuLink1');
+	    		var link2 = document.getElementById('meuLink2')	
+        		if (buttonId === 'ataques1__botao1'){link1.src ='https://giffiles.alphacoders.com/124/124993.gif'}
+	    		else if (buttonId === 'ataques1__botao2'){link1.src='https://pa1.aminoapps.com/7537/b33feb9ee6afe80ec43668748eaa4268855f63b8r1-500-268_hq.gif'}
+	    		else if (buttonId == 'ataques1__botao3'){link1.src='https://gifdb.com/images/high/sasuke-vs-naruto-making-rasengan-3zf5kzgxwx65ez98.gif'}
+	    		else if (buttonId=='ataques1__botao4'){link1.src='https://qph.cf2.quoracdn.net/main-qimg-d69c080b1da2efe3a38d0fcb8458d161'}
+				else if (buttonId=='ataques1__botao5'){link1.src=''}
+	    		else if (buttonId == 'ataques2__botao1'){link2.src='https://gifdb.com/images/high/sasuke-vs-naruto-multiple-shadow-clone-8wq69p4o7usnki3v.gif'}
+	    		else if (buttonId=='ataques2__botao2'){link2.src='https://gifdb.com/images/high/naruto-vs-sasuke-fireball-jutsu-3gjbw1do8y80g5k1.gif'}
+	    		else if (buttonId == 'ataques2__botao3'){link2.src='https://64.media.tumblr.com/f9a6fde89ed685107ca9b4e741c06002/tumblr_mtn04jdIaQ1sr0kmzo1_500.gif'}
+	    		else if (buttonId=='ataques2__botao4'){link2.src='https://i.pinimg.com/originals/d6/2b/d7/d62bd71d48a2e2cabc12824d33f66f32.gif'}
+				else if (buttonId=='ataques2__botao5'){link2.src=''}
+        	}
+    	</script>
+	</head>
+
+	<body>
+
+		<header>
+			<div class="logo">
+				<div class="logo__texto">
+					<h1>GIF BATTLE<h1>
+				</div>
+			</div>
+		</header>
+
+		<div class="meio">
+
+			<div class="ataques1">
+				<h3>LISTA DE ATAQUES<h3>
+				<div class="botoes">
+					<button onclick="changeHref('ataques1__botao1')" class="ataques1__botao1">1</button>
+					<button onclick="changeHref('ataques1__botao2')" class="ataques1__botao2">2</button>
+					<button onclick="changeHref('ataques1__botao3')" class="ataques1__botao3">3</button>
+					<button onclick="changeHref('ataques1__botao4')" class="ataques1__botao4">4</button>
+				</div>
+			</div>
+
+			<div class="ataque1">
+		<img id='meuLink1' src="https://www.gifcen.com/wp-content/uploads/2023/03/naruto-gif-15.gif" alt="Aguardando comando de ataque">
+			</div>
+
+			<div class="ataque2">
+				<img id='meuLink2' src="https://i.pinimg.com/originals/8f/91/18/8f911824957eeeb34a5d2575e6cdde16.gif" alt="Aguardando comando de ataque">
+			</div>
+
+			<div class="ataques2">
+				<h3>LISTA DE ATAQUES<h3>
+				<div class="botoes">
+					<button onclick="changeHref('ataques2__botao1')" class="ataques2__botao1">1</button>
+					<button onclick="changeHref('ataques2__botao2')" class="ataques2__botao2">2</button>
+					<button onclick="changeHref('ataques2__botao3')" class="ataques2__botao3">3</button>
+					<button onclick="changeHref('ataques2__botao4')" class="ataques2__botao4">4</button>
+				</div>
+			</div>
+
+
+		</div>
+
+	</body>
+
+</html>
